@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 14, 136);
+    color: rgb(246, 250, 16);
 }
 .navbar{
     margin: 0 auto;
@@ -9,13 +9,13 @@
     padding: 20px;
     align-items: center;
     max-width: 700px;
-    border-bottom: 1px solid #2f086e;
+    border-bottom: 1px solid white;
 }
-.navbar h2{
-    color: #211f9e;
+.navbar .h2{
+    color:blueviolet;
     font-size: 40px;
 }
-.navbar link{
+.navbar .link{
     margin-left: auto;
 }
 .navbar a:hover{

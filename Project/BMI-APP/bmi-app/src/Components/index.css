@@ -1,0 +1,7 @@
+.Navbar{
+    background-color: aquamarine;
+    min-height: 50px;
+    display: flex;
+    text-align: center;
+    color: red;
+}

@@ -7,16 +7,26 @@ import  Navbar  from './Components/Navbar';
 import Form from './Components/Todo';
 
 
+
+
 function App() {
+ 
   return (
     <div className="App">
-      <Navbar/>  
-             
+      <Navbar/>
+                   
       <Form/> 
       <div className='content'>
       <TodoApp/>
       </div>
+      <br></br>
+      <div>
+        <h2>To Do List App</h2>
+      </div>
+      <br></br>
+      
     </div>
+
   );
 }
 
