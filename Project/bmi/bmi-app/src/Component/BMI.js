@@ -5,9 +5,9 @@ import React, {useState} from 'react'
 function BmiApp() {
  
   // state
-  const[age, setAge]=useState(0)
-  const [weight, setWeight] = useState(0)
-  const [height, setHeight] = useState(0)
+  const[age, setAge]=useState("")
+  const [weight, setWeight] = useState("")
+  const [height, setHeight] = useState("")
   const [bmi, setBmi] = useState('')
   const [message, setMessage] = useState('')
  
@@ -15,7 +15,7 @@ function BmiApp() {
     //prevent submitting to the server
     event.preventDefault()
  
-    if (weight === 0 || height === 0) {
+    if (weight <= 0 || height <=0) {
       alert('Please enter a valid weight and height')
     } else {
       let bmi = (weight / (height * height)*10000)
@@ -23,9 +23,9 @@ function BmiApp() {
  
       // Logic for message
  
-      if (bmi < 25) {
+      if (bmi < 18) {
         setMessage('You are underweight')
-      } else if (bmi >= 25 && bmi < 30) {
+      } else if (bmi >= 18 && bmi < 30) {
         setMessage('You are a healthy weight, Keep it up!')
       } else {
         setMessage('You are overweight')
